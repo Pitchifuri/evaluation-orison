@@ -1,0 +1,23 @@
+@import "base/fonts";
+@import "base/reset";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "layout/global";
+@import "layout/header";
+@import "pages/main";
+@import "layout/footer";
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+html, body {
+	box-sizing: border-box;
+	text-align: center;
+	font: 16px/1.5em 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
