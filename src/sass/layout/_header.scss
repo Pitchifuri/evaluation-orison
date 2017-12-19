@@ -1,6 +1,6 @@
 .hero {
   width: 100vw;
-  height: 70vh;
+  height: 75vh;
   background: url("../img/Orison-Hero-5.jpg") center;
   background-size: cover;
 }
@@ -22,6 +22,7 @@
   height: 80px;
   background: #222;
   transition: .2s all ease-in-out;
+  z-index: 10;
 }
 
 .hero_logo {
@@ -81,8 +82,7 @@
   top: 70px;
   right: 20px;
   display: none;
-  width: 150px;
-  height: 30px;
+  padding: 10px 40px;
   border: 1px solid #fff;
   border-radius: 50px;
   background: transparent;
@@ -117,31 +117,44 @@
 .hero_buttons {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
 }
 
 .buttonHead1 {
-  width: 140px;
-  height: 40px;
+  padding: 5px 30px;
   background: #829198;
   border-radius: 50px;
   color: #fff;
   margin-right: 20px;
-  padding-left: 20px;
+  transition: .2s all ease-in-out;
+  margin-bottom: 10px;
+}
+
+.buttonHead1:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
 }
 
 .buttonHead2 {
-  width: 140px;
-  height: 40px;
+  padding: 5px 30px;
   background: transparent;
+  transition: .2s all ease-in-out;
   border-radius: 50px;
   border: 1px solid #fff;
   color: #fff;
-  padding-left: 20px;
 }
+
+.buttonHead2:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+
 
 @media screen and (min-width:960px) {
   .hero_fixed {
@@ -167,4 +180,10 @@
   .hero_article {
     padding-top: 200px;
   }
+
+  .buttonHead1 {
+    margin-bottom: 0px;
+  }
+
+
 }

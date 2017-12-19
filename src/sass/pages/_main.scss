@@ -30,6 +30,7 @@
   align-items: center;
   background: #212121;
   text-align: left;
+  padding-bottom: 100px;
   h3 {
     padding-top: 100px;
     text-transform: uppercase;
@@ -48,24 +49,18 @@
 }
 
 .learnButton {
-  width: 140px;
-  height: 40px;
-  line-height: 2.5rem;
   background: #829198;
   border-radius: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
   transition: .2s all ease-in-out;
-  a {
-    color: #fff;
-    padding-left: 15px;
-    transition: .2s all ease-in-out;
-  }
-  a:hover {
+  padding: 10px 30px;
+  color: #fff;
+  transition: .2s all ease-in-out;
+}
+  .learnButton:hover {
     text-decoration: none;
     color: #000;
   }
-}
+
 
 .learnButton:hover {
   background: #fff;
@@ -76,15 +71,149 @@
   width: 70%;
 }
 
-
-
-
+.scrollReveal {
+  opacity: 0;
+  transition: .8s all ease-in-out;
+}
 
 .homepage_time {
   width: 100vw;
   display: flex;
   flex-flow: column;
 }
+
+.homepage_products--unit {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homepage_products--article {
+  width: 80%;
+}
+
+.homepage_products--image {
+  width: 80%;
+}
+
+.homepage_products--image1 {
+  width: 70%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.homepage_skills--head {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.homepage_skills--articles {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.homepage_skills--article {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.homepage_highly {
+  text-align: center;
+  background: #666;
+  color: #fff;
+  h2 {
+    padding-top: 20px;
+    width: 80%;
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
+.homepage_nowiring {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.homepage_nowiring--button {
+  background: #829198;
+  border-radius: 50px;
+  transition: .2s all ease-in-out;
+  padding: 10px 30px;
+  color: #fff;
+  transition: .2s all ease-in-out;
+
+}
+  .homepage_nowiring--button:hover {
+    text-decoration: none;
+    color: #222;
+    background: #fff;
+  }
+
+  .homepage_power {
+    background: #212121;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    h3 {
+      padding-bottom: 30px;
+    }
+    a {
+      background: #829198;
+      border-radius: 50px;
+      transition: .2s all ease-in-out;
+      padding: 10px 30px;
+      color: #fff;
+      transition: .2s all ease-in-out;
+    }
+  }
+
+  .homepage_time {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background: #829198;
+  }
+
+  .homepage_time--article {
+    img {
+      width: 50%;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+    p {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  .homepage_press {
+    background: #829198;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
 
 
 @media screen and (min-width:960px) {
@@ -96,5 +225,83 @@
 
   .homepage_products {
     flex-flow: row nowrap;
+    padding-top: 200px;
+
+  }
+
+  .homepage_products--unit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .homepage_products--article {
+    width: 40%;
+  }
+
+  .homepage_products--image {
+    width: 40%;
+
+  }
+  .homepage_products--image1 {
+    width: 30%;
+
+  }
+
+  .homepage_skills--articles {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .homepage_skills--article {
+    width: 30%;
+    img {
+      width: 30%;
+    }
+  }
+
+  .homepage_highly {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    h2 {
+      margin-left: 50px;
+    }
+  }
+
+  .homepage_nowiring {
+    width: 50%;
+    padding: 0;
+  }
+
+  .homepage_nowiring--button {
+    margin-left: 50px;
+  }
+
+  .homepage_time {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .homepage_time--article {
+    width: 25%;
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+
+  .homepage_highly {
+    h2 {
+      margin-left: 100px;
+    }
+  }
+
+  .homepage_nowiring--button {
+    margin-left: 100px;
   }
 }
