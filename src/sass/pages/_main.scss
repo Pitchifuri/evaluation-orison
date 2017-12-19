@@ -214,6 +214,267 @@
     padding-bottom: 50px;
   }
 
+  //SHOP///
+
+  .shop_tower {
+    text-align: center;
+    background: #3f3f3f;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 40%;
+      padding-top: 50px;
+    }
+  }
+
+  .shop_tower--article {
+    h3 {
+      padding-top: 50px;
+      text-transform: uppercase;
+      color: #839599;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 40px;
+    }
+  }
+
+  .shop_tower--buttons {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .buttonHead3 {
+    padding: 5px 30px;
+    background: transparent;
+    transition: .2s all ease-in-out;
+    border-radius: 50px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .buttonHead3:hover {
+    color: white;
+    background: #222;
+    text-decoration: none;
+  }
+
+  .shop_installation {
+    text-align: center;
+    h3 {
+      padding-top: 50px;
+      text-transform: uppercase;
+      color: #839599;
+      margin-bottom: 40px;
+    }
+    h2 {
+      line-height: 2.2rem;
+    }
+  }
+
+  .shop_who {
+    text-align: center;
+    h3 {
+      color:  #839599;
+    }
+  }
+
+  .shop_who--article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    span {
+      font-size: 3.5rem;
+      margin-right: 20px;
+      color:  #839599;
+    }
+    h3 {
+      color:  #839599;
+    }
+  }
+  hr {
+    background: #888;
+    width: 90%;
+  }
+
+  .features {
+    display: none;
+  }
+
+  .shop_control {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    background: #212121;
+  }
+
+  .shop_control--article {
+    width: 80%;
+    margin-bottom: 50px;
+    color: #fff;
+    h3 {
+      color: #839599;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: .2s all ease-in-out;
+    }
+    a:hover {
+      color: #888;
+    }
+    span {
+      margin-right: 20px;
+      transition: .2s all ease-in-out;
+    }
+    span:hover {
+      color: #888;
+    }
+  }
+
+  .shop_control--image {
+    width: 70%;
+    padding-bottom: 80px;
+  }
+
+  .shop_cloud {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .shop_cloud--article {
+    width: 80%;
+    margin-bottom: 50px;
+    color: #222;
+    h3 {
+      color: #839599;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: .2s all ease-in-out;
+    }
+    a:hover {
+      color: #888;
+    }
+    span {
+      margin-right: 20px;
+      transition: .2s all ease-in-out;
+    }
+    span:hover {
+      color: #888;
+    }
+  }
+
+  .shop_cloud--image {
+    width: 70%;
+    padding-bottom: 80px;
+  }
+
+  ///CONTACT///
+
+  .contact_main {
+    background: #fff;;
+    h1 {
+      padding-top: 100px;
+      text-align: center;
+      color: #fff;
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+      span {
+        color: #839599;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .contact_form {
+    width: 100%;
+    background: #212121;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    input {
+      width: 90%;
+      margin-top: 10px;
+      height: 60px;
+    }
+    textarea {
+      width: 90%;
+      height: 60px;
+      margin-top: 10px;
+    }
+  }
+
+  #results {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #map {
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 70%;
+    height: 400px;
+    background-color: grey;
+    margin-bottom: 50px;
+  }
+
+  #send {
+    text-decoration: none;
+    color: #000;
+    background:  #839599;
+    border-radius: 50px;
+    padding: 10px 40px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .flikr_api {
+    text-align: center;
+    margin-top: 50px;
+    h1 {
+      font-weight: lighter;
+    }
+  }
+
+  .map_api {
+    text-align: center;
+
+    h1 {
+      font-weight: lighter;
+      padding-bottom: 50px;
+    }
+  }
+
+
 
 
 @media screen and (min-width:960px) {
@@ -290,6 +551,107 @@
   .homepage_time--article {
     width: 25%;
   }
+
+  .shop_tower {
+    text-align: left;
+    background: #3f3f3f;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    img {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .shop_tower--buttons {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .buttonHead3 {
+    margin-right: 20px;
+  }
+
+  .shop_tower--article {
+    width: 60%;
+  }
+
+  .shop_who {
+    text-align: center;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .shop_who_article {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .smallwrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .features {
+    display: flex;
+    width: 50%;
+  }
+
+  .shop_control {
+    margin: 0 auto;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #212121;
+    margin: 0 auto;
+    img {
+      width: 70%;
+    }
+  }
+
+  .shop_control--article {
+    width: 45%;
+    text-align: left;
+    margin-left: 70px;
+  }
+
+
+.shop_cloud {
+  margin: 0 auto;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 70%;
+  }
+}
+
+.shop_cloud--article {
+  width: 45%;
+  text-align: left;
+  margin-right: 70px;
+}
+
+#results {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 }
 
 
@@ -303,5 +665,9 @@
 
   .homepage_nowiring--button {
     margin-left: 100px;
+  }
+
+  .wrapper {
+    width: 60%;
   }
 }

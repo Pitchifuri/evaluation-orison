@@ -1,6 +1,8 @@
+/////HOMEPAGE////
+
 .hero {
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   background: url("../img/Orison-Hero-5.jpg") center;
   background-size: cover;
 }
@@ -155,10 +157,93 @@
 }
 
 
+/////SHOP////
+
+.heroShop {
+  width: 100%;
+  background: #212121;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero_article2 {
+  padding-top: 100px;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 1px;
+  span {
+      padding-top: 100px;
+      text-transform: uppercase;
+      color: #839599;
+      margin-bottom: 40px;
+      font-size: 1.2rem
+    }
+    h1 {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+}
+
+.shop_share {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  margin-top: -50px;
+}
+
+.share_social {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: #888;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+  }
+}
+
+
+
+
 
 @media screen and (min-width:960px) {
   .hero_fixed {
     background: transparent;
+  }
+
+  .heroShop {
+    text-align: left;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+    img {
+      transform: translateX(200px);
+    }
+  }
+
+  .hero_article2 {
+    width: 70%;
+    text-align: left;
   }
 
   .wrapper {
@@ -184,6 +269,12 @@
   .buttonHead1 {
     margin-bottom: 0px;
   }
+
+  .wrapper {
+    width: 80%;
+  }
+
+
 
 
 }

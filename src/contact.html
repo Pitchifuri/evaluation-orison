@@ -28,10 +28,11 @@
         <a href="" class="hero_reserve">Reserve Now</a>
       </header>
 
-      <main>
-        <section class="contact_form">
+      <main class="contact_main">
 
-          <h1><span>Contact Orison</span><br>We'd love to hear from you.</h1>
+        <section class="contact_form">
+            <h1><span>Contact Orison</span><br>We'd love to hear from you.</h1>
+
           <form action="">
             <div class="contact_input1">
               <input id="firstName" type="text" placeholder="First Name" autocomplete="on">
@@ -50,13 +51,18 @@
             </div>
 
             <div class="contact_submit">
-              <input id="envoi" type="submit" name="Submit" value="envoyer">
+              <input id="send" type="submit" name="Submit" value="Submit">
             </div>
           </form>
         </section>
 
-        <section class="contact_api">
+        <section class="flikr_api">
+          <h2>Follow us on FlickR</h2>
           <div id='results'></div>
+        </section>
+        <section class="map_api">
+          <h2>Find us @GooglePlex HQ</h2>
+          <div id="map"></div>
         </section>
 
       </main>
@@ -112,6 +118,9 @@
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzrYIQnsDFNWLxOzXHB0UIKyASFmyiwRw&callback=initMap">
+      </script>
       <script src="js/main.min.js"></script>
     </body>
 </html>
