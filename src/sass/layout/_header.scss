@@ -1,0 +1,170 @@
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background: url("../img/Orison-Hero-5.jpg") center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hero_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #222;
+  transition: .2s all ease-in-out;
+}
+
+.hero_logo {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.hero_nav {
+  display: none;
+  margin-right: 20px;
+  a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+  }
+}
+
+.hero_nav a:hover {
+  color: #888;
+}
+
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.bar1, .bar2, .bar3 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+
+.bar1 {
+  top: 70%;
+}
+
+.bar2 {
+  top: 50%;
+}
+
+.bar3 {
+  top: 30%;
+}
+
+.hero_reserve {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  display: none;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  transition: .2s all ease-in-out;
+  padding-left: 22px;
+}
+
+.hero_reserve:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+.hero_article {
+  padding-top: 120px;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 1px;
+  strong {
+    color: #fff;
+  }
+}
+
+.hero_buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttonHead1 {
+  width: 140px;
+  height: 40px;
+  background: #829198;
+  border-radius: 50px;
+  color: #fff;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.buttonHead2 {
+  width: 140px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-left: 20px;
+}
+
+@media screen and (min-width:960px) {
+  .hero_fixed {
+    background: transparent;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+
+  .hero_nav {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .hero_reserve {
+    display: flex;
+  }
+
+  .hero_article {
+    padding-top: 200px;
+  }
+}
