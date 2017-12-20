@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled</title>
+    <title>Contact - Orizon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="author" href="humans.txt">
@@ -18,49 +18,58 @@
             <a href="index.html"><img src="img/logo.svg" alt="Orizon"></a>
           </div>
           <nav class="hero_nav">
-            <a href="shop.html">Shop</a>
+            <a href="shop.html">Products</a>
             <a href="#">About</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="#">News</a>
+            <a href="#">Medias</a>
           </nav>
+
+          <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+          <a href="shop.html" class="hero_reserve">Reserve Now</a>
         </div>
-        <a href="" class="hero_reserve">Reserve Now</a>
       </header>
 
       <main class="contact_main">
 
         <section class="contact_form">
-            <h1><span>Contact Orison</span><br>We'd love to hear from you.</h1>
+            <h1 class="scrollReveal"><span>Contact Orison</span><br>We'd love to hear from you.</h1>
 
-          <form action="">
-            <div class="contact_input1">
-              <input id="firstName" type="text" placeholder="First Name" autocomplete="on">
+          <form action="" class="contact_formflex scrollReveal">
+            <div class="contact_input1 scrollReveal">
+              <div >
+                <input id="firstName" type="text" placeholder="First Name" autocomplete="on">
+              </div>
+
+              <div class="contact_input1 scrollReveal">
+                <input id="lastName" type="text" placeholder="Last Name" autocomplete="on">
+              </div>
             </div>
 
-            <div class="contact_input1">
-              <input id="lastName" type="text" placeholder="Last Name" autocomplete="on">
-            </div>
 
-            <div class="contact_input2">
+            <div class="contact_input2 scrollReveal">
               <input id="email" type="email" placeholder="E-mail"  name="e-mail" required>
             </div>
 
-            <div class="contact_input2">
+            <div class="contact_input2 scrollReveal">
               <textarea id="message" name="message" placeholder="Message"></textarea>
             </div>
 
-            <div class="contact_submit">
+            <div class="contact_submit scrollReveal">
               <input id="send" type="submit" name="Submit" value="Submit">
             </div>
           </form>
         </section>
 
-        <section class="flikr_api">
+        <section class="flikr_api scrollReveal">
           <h2>Follow us on FlickR</h2>
           <div id='results'></div>
         </section>
-        <section class="map_api">
+        <section class="map_api scrollReveal">
           <h2>Find us @GooglePlex HQ</h2>
           <div id="map"></div>
         </section>

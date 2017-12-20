@@ -6,11 +6,11 @@
 @import "layout/header";
 @import "pages/main";
 @import "layout/footer";
-@import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
 html, body {
 	box-sizing: border-box;
-	font: 16px/1.5em 'Open Sans', sans-serif;
+	font: 16px/1.5em 'Muli', sans-serif;
 }
 
 *, *:before, *:after {

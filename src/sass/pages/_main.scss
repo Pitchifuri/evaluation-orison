@@ -31,6 +31,7 @@
   background: #212121;
   text-align: left;
   padding-bottom: 100px;
+
   h3 {
     padding-top: 100px;
     text-transform: uppercase;
@@ -53,10 +54,15 @@
   border-radius: 50px;
   transition: .2s all ease-in-out;
   padding: 10px 30px;
+  width: 150px;
   color: #fff;
   transition: .2s all ease-in-out;
+  a {
+    transition: .2s all ease-in-out;
+    color: #222;
+  }
 }
-  .learnButton:hover {
+  .learnButton a:hover {
     text-decoration: none;
     color: #000;
   }
@@ -181,7 +187,11 @@
       transition: .2s all ease-in-out;
       padding: 10px 30px;
       color: #fff;
-      transition: .2s all ease-in-out;
+    }
+    a:hover {
+      color: #222;
+      text-decoration: none;
+      background: #fff;
     }
   }
 
@@ -215,6 +225,10 @@
   }
 
   //SHOP///
+
+  .heroShop {
+    padding-top: 50px;
+  }
 
   .shop_tower {
     text-align: center;
@@ -398,7 +412,7 @@
   .contact_main {
     background: #fff;;
     h1 {
-      padding-top: 100px;
+      padding-top: 150px;
       text-align: center;
       color: #fff;
       line-height: 2.2rem;
@@ -418,13 +432,20 @@
     padding-bottom: 50px;
     input {
       width: 90%;
-      margin-top: 10px;
+      margin-top: 30px;
       height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-left: 10px;
     }
     textarea {
       width: 90%;
       height: 60px;
-      margin-top: 10px;
+      margin-top: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-top: 15px;
     }
   }
 
@@ -451,10 +472,18 @@
     color: #000;
     background:  #839599;
     border-radius: 50px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     border: none;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    transition: .2s all ease-in-out;
+  }
+
+  #send:hover {
+    background: #fff;
+    color: #222;
   }
 
   .flikr_api {
@@ -474,7 +503,144 @@
     }
   }
 
+  //BLOG//
 
+  .heroBlog {
+    width: 100%;
+  	height: 500px;
+    text-align: center;
+    h1 {
+      width: 80%;
+      color: #fff;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    span {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+    }
+  }
+
+  .read_article {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 30px;
+    background: #829198;
+    border-radius: 50px;
+    color: #fff;
+    margin-right: 20px;
+    transition: .2s all ease-in-out;
+    margin-bottom: 10px;
+  }
+  .read_article:hover {
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+  }
+
+	.heroBlog:before {
+	content: '';
+	width: 100%;
+	height: 500px;
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+  .blog_container {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .blog_articles {
+    width: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .blog_aside {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .aside {
+    max-width: 220px;
+    border: 1px solid #888;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: .8rem;
+    h3 {
+      text-transform: uppercase;
+      color:  #839599;
+      font-size: .8rem;
+    }
+    a {
+      color: #888;
+      text-decoration: none;
+      transition: .2s all ease-in-out;
+    }
+    a:hover {
+      color: #222;
+    }
+  }
+
+  .blog_article {
+    margin-bottom: 50px;
+    img {
+      width: 600px;
+    }
+    h2 {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2.2rem;
+      color: #222;
+    }
+    h2:hover {
+      text-decoration: none;
+      color: #222;
+    }
+    small {
+      color: #829198;
+    }
+    p {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  .fa-search {
+    color: #888;
+    padding-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  .profil {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
 
 @media screen and (min-width:960px) {
@@ -508,6 +674,10 @@
   .homepage_products--image1 {
     width: 30%;
 
+  }
+
+  .homepage_skills--head {
+    padding-top: 10px;
   }
 
   .homepage_skills--articles {
@@ -550,6 +720,10 @@
 
   .homepage_time--article {
     width: 25%;
+  }
+
+  .heroShop {
+    padding-top: 20px;
   }
 
   .shop_tower {
@@ -651,6 +825,61 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+//FORM//
+
+.contact_form {
+  width: 100%;
+  background: #212121;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  input {
+    width: 50%;
+    margin-top: 30px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  textarea {
+    width: 90%;
+    height: 60px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+}
+
+.contact_formflex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  input {
+    width: 250px;
+  }
+}
+
+.contact_input1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#email {
+  width: 500px;
+}
+
+#message {
+  width: 500px;
+}
+
 
 }
 
