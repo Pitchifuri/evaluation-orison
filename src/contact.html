@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Orizon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
     <link rel="author" href="humans.txt">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,7 +24,7 @@
             <a href="#">About</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="#">Medias</a>
+            <a href="article.html">Medias</a>
           </nav>
 
           <button class="burger">
@@ -37,29 +39,29 @@
       <main class="contact_main">
 
         <section class="contact_form">
-            <h1 class="scrollReveal"><span>Contact Orison</span><br>We'd love to hear from you.</h1>
+            <h1><span>Contact Orison</span><br>We'd love to hear from you.</h1>
 
-          <form action="" class="contact_formflex scrollReveal">
-            <div class="contact_input1 scrollReveal">
+          <form action="" class="contact_formflex">
+            <div class="contact_input1">
               <div >
-                <input id="firstName" type="text" placeholder="First Name" autocomplete="on">
+                <input id="firstName" type="text" placeholder="First Name" autocomplete="on" required>
               </div>
 
-              <div class="contact_input1 scrollReveal">
-                <input id="lastName" type="text" placeholder="Last Name" autocomplete="on">
+              <div class="contact_input1">
+                <input id="lastName" type="text" placeholder="Last Name" autocomplete="on" required>
               </div>
             </div>
 
 
-            <div class="contact_input2 scrollReveal">
+            <div class="contact_input2">
               <input id="email" type="email" placeholder="E-mail"  name="e-mail" required>
             </div>
 
-            <div class="contact_input2 scrollReveal">
+            <div class="contact_input2">
               <textarea id="message" name="message" placeholder="Message"></textarea>
             </div>
 
-            <div class="contact_submit scrollReveal">
+            <div class="contact_submit">
               <input id="send" type="submit" name="Submit" value="Submit">
             </div>
           </form>
@@ -67,8 +69,21 @@
 
         <section class="flikr_api scrollReveal">
           <h2>Follow us on FlickR</h2>
-          <div id='results'></div>
+
+            <div >
+              <a href="#" data-featherlight="#mylightbox">
+              <div id='results' class="owl-carousel owl-theme">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              <div>
+              </a>
+            </div>
+
         </section>
+
         <section class="map_api scrollReveal">
           <h2>Find us @GooglePlex HQ</h2>
           <div id="map"></div>
@@ -80,14 +95,14 @@
         <section class="foot">
           <section class="foot_navflex">
             <section class="foot_nav">
-              <a href="">Shop</a>
-              <a href="">About</a>
-              <a href="">Blog</a>
+              <a href="shop.html">Shop</a>
+              <a href="contact.html">About</a>
+              <a href="blog.html">Blog</a>
             </section>
             <section class="foot_nav">
-              <a href="">Contact</a>
-              <a href="">Faqs</a>
-              <a href="">News</a>
+              <a href="contact.html">Contact</a>
+              <a href="blog.html">Faqs</a>
+              <a href="blog.html">News</a>
             </section>
           </section>
 
@@ -98,13 +113,13 @@
             <a href="http://www.google.be" class="fa fa-linkedin"></a>
           </section>
           <section class="foot_form">
-            <form action="">
+            <form action="" class="foot_form">
               <small>Sign up for updates</small>
               <div>
-                <input id="email" type="email" placeholder="E-mail"  name="e-mail" required>
+                <input type="email" placeholder="E-mail"  name="e-mail" required  class="foot_email">
               </div>
               <div>
-                <input id="envoi" type="submit" name="envoi" value="Submit">
+                <input type="submit" name="envoi" value="Submit" class="foot_submit">
               </div>
             </form>
           </section>
@@ -119,14 +134,17 @@
       <script id="results-template" type="x-handlebars-template">
 
       {{#each this}}
-      <div class="result">
+      <div class="result" id="mylightbox">
           <img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="">
       </div>
       {{/each}}
 
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzrYIQnsDFNWLxOzXHB0UIKyASFmyiwRw&callback=initMap">
       </script>
